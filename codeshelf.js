@@ -1,10 +1,6 @@
 include(".cre.js");
 
-reader.processCommand("C","(7A)ffffffff");	// Set bt addr index -1
-reader.processCommand('C',"(9D)0");		// Target Tolerance: 0
-reader.processCommand('C',"(32)0");		// Bluetooth readers: Active Mode Countdown Timer: 30
-
-var text = new gui.Text("Codeshelf v1.0");
+var text = new gui.Text("Codeshelf");
 var rawText = "";
 gui.statusText = null;
 gui.show(text);
