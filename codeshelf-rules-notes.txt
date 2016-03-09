@@ -1,0 +1,22 @@
+This document briefly explains the commands set in the codeshelf-rules.mkr file
+
+==========================
+Register:	9D
+Value:		0
+Description:
+
+Set target tolerance of scanner to 0. This means that the
+barcode must be perfectly centered in the targeting light
+to be scanned. This value has been choosen to reduce scanning
+errors on packages and on the command card.
+
+==========================
+Register:	7A
+Value:		0xffffffff
+Description:
+
+Set the last known good bluetooth address to an invalid
+address (0xffffffff). When the scanner boots it will see
+this address as invalid and will not attempt to reconnect.
+This keeps the scanner from unintentionally connecting to
+a cart (the last one it was connected to).
